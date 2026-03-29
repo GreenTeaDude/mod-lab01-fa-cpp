@@ -1,15 +1,4 @@
-#ifndef FUN_H
-#define FUN_H
-
-unsigned int faStr1(const char *str);
-unsigned int faStr2(const char *str);
-unsigned int faStr3(const char *str);
-
-#endif
-
-
-#include <iostream>
-
+#include "fun.h"
 
 bool isSpace(char c)
 {
@@ -31,7 +20,8 @@ bool isLowerLatin(char c)
     return c >= 'a' && c <= 'z';
 }
 
-// Задача 1:
+// Задача 1
+
 unsigned int faStr1(const char *str)
 {
     if (str == nullptr)
@@ -64,8 +54,7 @@ unsigned int faStr1(const char *str)
     return count;
 }
 
-// Задача 2:
-
+// Задача 2
 unsigned int faStr2(const char *str)
 {
     if (str == nullptr)
@@ -107,7 +96,8 @@ unsigned int faStr2(const char *str)
     return count;
 }
 
-// Задача 3:
+// Задача 3
+
 unsigned int faStr3(const char *str)
 {
     if (str == nullptr)
